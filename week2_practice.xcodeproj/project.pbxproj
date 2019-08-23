@@ -99,9 +99,10 @@
 		46055663230FC958000CACC5 /* week2_practice */ = {
 			isa = PBXGroup;
 			children = (
+				46055697230FC9BD000CACC5 /* Controller */,
+				46055696230FC9AB000CACC5 /* View */,
+				46055695230FC998000CACC5 /* Model */,
 				46055664230FC958000CACC5 /* AppDelegate.swift */,
-				46055666230FC958000CACC5 /* ViewController.swift */,
-				46055668230FC959000CACC5 /* Main.storyboard */,
 				4605566E230FC95D000CACC5 /* Assets.xcassets */,
 				46055670230FC95D000CACC5 /* LaunchScreen.storyboard */,
 				46055673230FC95D000CACC5 /* Info.plist */,
@@ -126,6 +127,29 @@
 				46055689230FC95D000CACC5 /* Info.plist */,
 			);
 			path = week2_practiceUITests;
+			sourceTree = "<group>";
+		};
+		46055695230FC998000CACC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46055696230FC9AB000CACC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46055668230FC959000CACC5 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46055697230FC9BD000CACC5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46055666230FC958000CACC5 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
