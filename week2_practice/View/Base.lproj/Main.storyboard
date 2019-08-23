@@ -25,33 +25,41 @@
                                 <color key="textColor" red="0.82057561528497414" green="0.17100132014587344" blue="0.47418002624235189" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Avengers_Endgame_poster" translatesAutoresizingMaskIntoConstraints="NO" id="2n1-O7-kWk">
-                                <rect key="frame" x="16" y="57" width="288" height="401"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHb-i6-ccq">
                                 <rect key="frame" x="132" y="502" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="btnChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5K-Lz-7ke"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Running time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYg-uY-nRM">
-                                <rect key="frame" x="203" y="466" width="101" height="21"/>
+                                <rect key="frame" x="48" y="466" width="256" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Avengers" translatesAutoresizingMaskIntoConstraints="NO" id="2n1-O7-kWk">
+                                <rect key="frame" x="16" y="57" width="288" height="401"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="movieTitle" destination="ROP-w4-zKX" id="pKN-eo-Jfb"/>
+                        <outlet property="poster" destination="2n1-O7-kWk" id="Fes-K7-IJG"/>
+                        <outlet property="runningTime" destination="OYg-uY-nRM" id="JJ2-UK-XCu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63.75" y="32.74647887323944"/>
+            <point key="canvasLocation" x="680.625" y="49.647887323943664"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Avengers_Endgame_poster" width="220" height="326"/>
+        <image name="Avengers" width="220" height="326"/>
     </resources>
 </document>
